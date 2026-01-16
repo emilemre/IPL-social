@@ -8,3 +8,10 @@ describe("mailCheck", () => {
     expect(mail).toBe(false);
   });
 });
+
+describe("mailChechFor@", ()=> {
+    it("should return true if '@' is present in the string", ()=>{
+        const mail : boolean = validMailName("@test");
+        expect(mail).toBe(true);
+    })
+})
